@@ -5,9 +5,6 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
-
 @RunWith(Parameterized.class)
 public class LionTest {
     private final String sex;
@@ -18,7 +15,7 @@ public class LionTest {
         this.expectedHasMane = expectedHasMane;
     }
 
-    @Parameterized.Parameters
+    @Parameterized.Parameters (name = "Тестовые данные: {0} {1}")
     public static Object[] getData() {
         return new Object[][] {
                 {"Самец", true},

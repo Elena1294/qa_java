@@ -1,13 +1,13 @@
 -------------------------------------------------------------------------------
 Test set: CatTest
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 2.807 sec <<< FAILURE!
-unnecessary Mockito stubbings(CatTest)  Time elapsed: 0.118 sec  <<< ERROR!
+Tests run: 3, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 3.228 sec <<< FAILURE!
+unnecessary Mockito stubbings(CatTest)  Time elapsed: 0.211 sec  <<< ERROR!
 org.mockito.exceptions.misusing.UnnecessaryStubbingException: 
 Unnecessary stubbings detected in test class: CatTest
 Clean & maintainable test code requires zero unnecessary code.
 Following stubbings are unnecessary (click to navigate to relevant line of code):
-  1. -> at CatTest.getFoodReturnCorrectValue(CatTest.java:30)
+  1. -> at CatTest.getFoodReturnCorrectValue(CatTest.java:29)
 Please remove unnecessary stubbings or use 'lenient' strictness. More info: javadoc for UnnecessaryStubbingException class.
 	at org.mockito.internal.runners.StrictRunner.run(StrictRunner.java:53)
 	at org.mockito.junit.MockitoJUnitRunner.run(MockitoJUnitRunner.java:163)
