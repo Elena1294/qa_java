@@ -1,0 +1,45 @@
+-------------------------------------------------------------------------------
+Test set: LionTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.038 sec <<< FAILURE!
+initializationError(LionTest)  Time elapsed: 0.003 sec  <<< ERROR!
+java.lang.IllegalArgumentException: can't parse argument number: пол:самец/самка
+	at java.base/java.text.MessageFormat.makeFormat(MessageFormat.java:1454)
+	at java.base/java.text.MessageFormat.applyPattern(MessageFormat.java:492)
+	at java.base/java.text.MessageFormat.<init>(MessageFormat.java:371)
+	at java.base/java.text.MessageFormat.format(MessageFormat.java:860)
+	at org.junit.runners.Parameterized$RunnersFactory.createTestWithParameters(Parameterized.java:499)
+	at org.junit.runners.Parameterized$RunnersFactory.createTestWithNotNormalizedParameters(Parameterized.java:413)
+	at org.junit.runners.Parameterized$RunnersFactory.createTestsForParameters(Parameterized.java:478)
+	at org.junit.runners.Parameterized$RunnersFactory.createRunnersForParameters(Parameterized.java:459)
+	at org.junit.runners.Parameterized$RunnersFactory.createRunners(Parameterized.java:392)
+	at org.junit.runners.Parameterized$RunnersFactory.access$100(Parameterized.java:360)
+	at org.junit.runners.Parameterized.<init>(Parameterized.java:307)
+	at org.junit.runners.Parameterized.<init>(Parameterized.java:303)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.junit.internal.builders.AnnotatedBuilder.buildRunner(AnnotatedBuilder.java:104)
+	at org.junit.internal.builders.AnnotatedBuilder.runnerForClass(AnnotatedBuilder.java:86)
+	at org.junit.runners.model.RunnerBuilder.safeRunnerForClass(RunnerBuilder.java:70)
+	at org.junit.internal.builders.AllDefaultPossibilitiesBuilder.runnerForClass(AllDefaultPossibilitiesBuilder.java:37)
+	at org.junit.runners.model.RunnerBuilder.safeRunnerForClass(RunnerBuilder.java:70)
+	at org.junit.internal.requests.ClassRequest.createRunner(ClassRequest.java:28)
+	at org.junit.internal.requests.MemoizingRequest.getRunner(MemoizingRequest.java:19)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:250)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: java.lang.NumberFormatException: For input string: "пол:самец/самка"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
+	at java.base/java.lang.Integer.parseInt(Integer.java:668)
+	at java.base/java.lang.Integer.parseInt(Integer.java:784)
+	at java.base/java.text.MessageFormat.makeFormat(MessageFormat.java:1452)
+	... 31 more
+
